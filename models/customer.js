@@ -4,7 +4,7 @@ const customerSchema = new Schema({
     fullName: {
         type: String,
         trim: true,
-        required: [true, 'You Must Provide A Product Name']
+        required: [true, 'You Must Provide A Full Name']
     },
     email: {
         type: String,

@@ -7,17 +7,16 @@ const corsOptions = {
 }
 const app = express();
 const customerRoutes = require('./routes/customerRoute')
-const orderRoutes = require('./routes/orderRoute')
+// const orderRoutes = require('./routes/orderRoute')
 const connectDB = require('./dbConnection/connect')
 require('dotenv').config()
 
 app.use(cors(corsOptions))
 app.use(express.json());
 app.use('/api/v1/customer', customerRoutes)
-app.use('/api/v1/order', orderRoutes)
+// app.use('/api/v1/order', orderRoutes)
 
-const port = process.env.PORT || 5000;
-
+const port = process.env.PORT || 5050;
 const start = async () => {
     try {
         await connectDB(process.env.MONGO_URI)
