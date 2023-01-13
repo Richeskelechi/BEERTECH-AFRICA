@@ -85,3 +85,14 @@ Prepared statement must be used
 Stored Procedure would be an added advantage 
 
 Push your update to your Git repo and share the Repo as response to your assessment
+
+Running The Project.
+
+Clone the Repository
+Run npm install
+ensure you create .env file and all the following
+MONGO_URI="******************************"
+SALT_ROUNDS=10
+JWT_SECRET="JWT_SECRET"
+
+use npm run dev to start the server or npm start
