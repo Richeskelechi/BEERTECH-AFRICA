@@ -91,7 +91,7 @@ Running The Project.
 Clone the Repository
 Run npm install
 ensure you create .env file and all the following
-MONGO_URI="******************************"
+MONGO_URI="Your Connection To DataBase Goes here"
 SALT_ROUNDS=10
 JWT_SECRET="JWT_SECRET"
 
